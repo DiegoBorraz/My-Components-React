@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState } from "react";
+//import MomentUtils from "@date-io/moment"; // choose your lib
+//import { DatePicker, TimePicker, DateTimePicker, MuiPickersUtilsProvider } from "@material-ui/pickers";
+import Dates from "./MyComponents/Dates";
+import Forms from "./MyComponents/Forms";
 function App() {
+  //const [selectedDate, handleDateChange] = useState(new Date());
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Forms />
+    // <Dates />
+    // <MuiPickersUtilsProvider utils={MomentUtils}>
+    //   <DatePicker value={selectedDate} onChange={handleDateChange} />
+    //   <TimePicker value={selectedDate} onChange={handleDateChange} />
+    //   <DateTimePicker value={selectedDate} onChange={handleDateChange} />
+    // </MuiPickersUtilsProvider>
   );
 }
-
 export default App;
